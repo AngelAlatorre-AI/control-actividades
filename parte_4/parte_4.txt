@@ -1,0 +1,34 @@
+Parte 4. Conceptos
+Responde esta parte en el documento parte_4/parte_4.pdf. Incluye cada pregunta y su respuesta.
+
+1. Explica la diferencia entre Git y GitHub.
+
+Git funciona como un controlador de versiones y GitHub funciona como una nube donde se suben los proyectos
+
+2. Explica para qué sirve .gitignore.
+
+El archivo .gitignore tiene la funcionalidad de que los archivos que esten escritos dentro del mismo
+no se vean reflejados cuando se realizan cambios o que cuando tu hagas un git push no se suban al repositorio
+en GitHub
+
+3. Explica por qué .venv no debe almacenarse normalmente en GitHub.
+
+Porque contiene miles de archivos pesados y rutas específicas del sistema operativo 
+de tu computadora que lo harían incompatible en otros equipos.
+
+4. Explica para qué sirve requirements.txt.
+
+Almacena todos los requisitos que necesitas instalar para que el programa funcione adecuadamente y
+sirve para que cada desarrollador genere su propio entorno limpio localmente con un pip install
+
+5. Explica la diferencia entre Stage, Commit y Push.
+
+Stage (git add): Prepara y selecciona los archivos modificados que quieres incluir en la siguiente actualización
+
+Commit (git commit): Guarda esa selección de archivos en el historial local de tu computadora con una descripción breve
+
+Push (git push): Sube esos commits guardados localmente hacia el repositorio remoto en la nube para compartirlos
+
+6. Explica por qué un repositorio puede tener varios commits antes de realizar un push.
+
+Porque puedes realizar una infinidad de cambios, (avances o correciones) antes de estar seguro de subirlos al repositorio en GitHub

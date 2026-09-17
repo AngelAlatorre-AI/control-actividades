@@ -1,0 +1,60 @@
+Parte 2. Comprensión del flujo colaborativo
+Responde esta parte en el documento parte_2/parte_2.pdf. Incluye en cada punto el planteamiento y tu
+explicación.
+
+1. Flujo colaborativo
+Supón que quieres colaborar con el repositorio de otro desarrollador. Ordena y explica los siguientes
+elementos: Push, Fork, Pull Request, Clone, Merge, Commit, Review, Branch y Modificar archivos. Agrega
+cualquier operación que consideres necesaria.
+
+Para colaborar en el repositorio de otro desarrollador, primero haces un Fork para copiar su repositorio a tu cuenta, 
+y luego lo bajas a tu computadora con Clone. En tu entorno local, creas una rama independiente con Branch para trabajar de forma aislada,
+te pones a Modificar archivos escribiendo el código necesario y guardas tus avances localmente usando Commit. 
+Después, subes esos cambios a la nube mediante Push y abres un Pull Request para solicitar al dueño original que evalúe tu aporte. 
+Durante el proceso se realiza el Review para recibir comentarios y hacer ajustes, y finalmente ocurre el Merge cuando el autor integra tus 
+cambios al proyecto principal.
+
+
+2. Fork y Clone
+Analiza la afirmación: “Clone crea una copia del proyecto dentro de mi cuenta de GitHub”. Indica si es
+correcta y explica la diferencia entre Fork y Clone.
+
+Es incorrecto, lo que hace clone es crear una copia del proyecto de manerea local, el Fork hace una copia del repositorio
+en GitHub para posteriormente clonar ese fork en tu equipo de manerea local
+
+3. Pull Request
+Supón que realizaste Fork, Clone, Branch, Modificar, Commit y Push. Responde: ¿los cambios ya forman parte
+del repositorio original? ¿Qué debe ocurrir para incorporarlos?
+
+Los cambios aún no se verán reflejados en el repositorio original, lo que debes de hacer es mandar un pull request 
+desde tu GitHub con loss cambios que realizaste y una descripción de los mismos, es recomendable que no envies directamente
+los cambios desde main, mas bien debes mandar una rama en la que trabajaste para que así el autor original pueda verificar
+si los cambios que realizaste son correctos, en caso de que no lo sean el autor puede dejarte comentarios de las modificaciones
+para que después de que las realices finalmente el dueo pueda añadirlo al repositorio original sin ningun problema
+
+4. Request Changes
+El propietario revisa tu Pull Request y selecciona Request Changes. Explica qué debes hacer, si necesitas
+crear otro Pull Request y qué ocurre cuando realizas nuevamente push.
+
+Si el propietario revisa el pull request y selecciona n request chanes, puedes reealizar esos mismos cambios sin la necesidad 
+de mandar otro pull request, puedes hacer los cambios en el mismo GitHub y despues solicitar de nuevo el push para que el propietario 
+ya te de el visto bueno
+
+5. Merge y repositorio local
+Un Pull Request fue aceptado y se realizó Merge en GitHub. Sin embargo, el repositorio local del propietario no
+contiene los cambios. Explica por qué sucede y qué operación debe realizarse.
+
+Sucede porque aunque haya aceptado los cambios esos mismos se ven reflejados en la nube, para poder verlos de manera
+local debe de realizar un git pull, así traera a su repositorio local todos los cambios realizados en la nube
+
+6. Sync Fork
+Tu Fork fue creado varios días atrás y el repositorio original recibió nuevos commits. Explica qué herramienta
+utilizarías, qué repositorio se actualiza y qué diferencia existe entre Sync Fork y git pull.
+
+Si el fork que relizaste para trabajar tiene dias sin actualizarse, debes de ir a GitHub y usar la opción de Synk Fork
+la cual te permitira traer todos las actualizaciones del repositorio original al fork que tenias anteriormente en GitHub.
+
+La principal diferencia entre el Sync Fork y el git pull es que el primero trae los cambios del repositorio original de GitHub
+a tu repositorio en GitHub también, una vez que tu repositorio fork este actualizado, ahora si puedes hacer un git pull para traeer
+esas actualizaciones a tu repositorio local.
+

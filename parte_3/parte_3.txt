@@ -1,0 +1,49 @@
+Parte 3. Interpretación de comandos
+Responde esta parte en el documento parte_3/parte_3.pdf. Incluye cada planteamiento y su explicación.
+
+1. Analiza
+git status
+git add README.md
+git commit -m "Actualiza documentación"
+git push
+Explica qué ocurre en cada instrucción.
+
+git status: Nos permite verificar que archivos han recibido algun tipo de modificación
+
+git add README.md: Es un comando que indica que las modificaciones realizadas en README pueden
+ir al stage para prepararse a ser enviados
+
+git commit -m "Actualiza documentación": Con este comando podemos añadir una descripción sobre la modificación
+que estamos haciendo, en este caso sería indicar que actualizamos la documentación
+
+git push: Envía al repositorio en Git la modificación realizada con la descripción correspondiente
+
+2. Identifica qué falta
+Caso A
+Modificar archivo
+↓
+git add .
+↓
+¿?
+↓
+git push
+
+Falta crear el git commit -m, la función es darle una breve descripción a los cambios realizados
+
+Caso B
+Repositorio GitHub
+↓
+¿?
+↓
+Repositorio local
+
+Se tiene que hacer un clone del repositorio en vs studio
+
+Caso C
+Repositorio remoto actualizado
+↓
+¿?
+↓
+Repositorio local actualizado
+
+Se tiene que hacer un git pull para actualizar el repositorio local
