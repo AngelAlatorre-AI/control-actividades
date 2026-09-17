@@ -9,3 +9,6 @@ Preparar la estructura inicial de un proyecto utilizando Python, Git y GitHub.
 - GitHub
 ## Autor
 Luis Angel Alatorre Zenea
+
+## Estado del proyecto
+Proyecto en etapa inicial.
